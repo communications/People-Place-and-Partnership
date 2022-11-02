@@ -2,6 +2,43 @@
     position: relative;
     overflow: hidden;
 
+    &.pink {
+
+        blockquote {
+            border-color: $brand-pink;
+        }
+
+        .button::after {
+            background-color: $brand-pink;
+        }
+
+    }
+
+    &.green {
+
+        blockquote {
+            border-color: $brand-green;
+            
+        }
+
+        .button::after {
+            background-color: $brand-green;
+        }
+
+    }
+
+    &.blue {
+
+        blockquote {
+            border-color: $brand-blue;
+        }
+
+        .button::after {
+            background-color: $brand-blue;
+        }
+
+    }
+
     .cell {
         position: relative;
         z-index: 1;
