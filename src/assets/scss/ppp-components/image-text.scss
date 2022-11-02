@@ -2,7 +2,7 @@
     .full-image-text-image {
         position: absolute;
         width: 54%;
-        left: 60%;
+        left: 65%;
         bottom: -30%;
         top: -30%;
         background-size: cover;
@@ -15,7 +15,7 @@
     .full-image-text-image {
         position: absolute;
         width: 54%;
-        right: 60%;
+        right: 65%;
         bottom: -30%;
         top: -30%;
         background-size: cover;
@@ -28,6 +28,11 @@
 .image-text, .text-image {
     position: relative;
     overflow: hidden;
+
+    blockquote p {
+        font-size: 18px;
+        color: $primary-color !important;
+    }
 
 
 

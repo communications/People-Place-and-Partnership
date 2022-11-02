@@ -139,3 +139,17 @@ $('.vimeo-container .stop-video').bind('click keypress', function (e) {
 
     });
 });
+
+
+$(function () {
+    var $win = $(window);
+
+    
+        if ($win.Top() == 0)
+            alert('Scrolled to Page Top');
+        else if ($win.height() + $win.Top()
+                       == $(document).height()) {
+            alert('Scrolled to Page Bottom');
+        }
+ 
+});
