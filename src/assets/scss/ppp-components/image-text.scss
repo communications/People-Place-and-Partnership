@@ -1,6 +1,35 @@
+.text-image {
+    .full-image-text-image {
+        position: absolute;
+        width: 54%;
+        left: 60%;
+        bottom: -30%;
+        top: -30%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
+}
+
+.image-text {
+    .full-image-text-image {
+        position: absolute;
+        width: 54%;
+        right: 60%;
+        bottom: -30%;
+        top: -30%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
+}
+
+
 .image-text, .text-image {
     position: relative;
     overflow: hidden;
+
+
 
     &.pink {
 
@@ -18,7 +47,7 @@
 
         blockquote {
             border-color: $brand-green;
-            
+
         }
 
         .button::after {
