@@ -1,0 +1,110 @@
+.hero {
+    overflow: hidden;
+    background-color: $primary-color;
+
+    &::before {
+        display: none;
+    }
+
+    .hero-image {
+        background-size: cover;
+    }
+
+    .device-lines {
+        left: 2em;
+        top: 20vh;
+        z-index: -1;
+    }
+
+    .device-quarter {
+        position: absolute;
+        top:8em;
+        left: -3em;
+    }
+
+    .content {
+        padding-top: 12em;
+        padding-bottom: 6em;
+        position: relative;
+        z-index: 99;
+
+        h1{
+           
+
+            span {
+                display: block;
+            }
+        }
+
+        p {
+            position: relative;
+            padding-top: 30px;
+            max-width: 50%;
+
+            &::before {
+                content:"";
+                position: absolute;
+                top: 0;
+                width: 150px;
+                height: 4px;
+                background-color: white;
+            }
+        }
+
+
+        
+    }
+
+    &.home-hero {
+        min-height: 100vh;
+    }
+
+    .hero-image-container {
+        position: relative;
+    }
+
+    .hero-image {
+        height: 700px;
+        width: 700px;
+        margin: 11em 0px 5em;
+        border-radius: 50%;
+        background-position: center;
+    }
+
+    .cell {
+        position: relative;
+    }
+
+    .line-down {
+        position: absolute;
+        width: 4px;
+        background-color: white;
+        height: 80px;
+        bottom: -4em;
+        left: 0em;
+    }
+}
+
+.smaller-hero {
+    .hero-image {
+        height: 500px;
+        width: 500px;
+        margin-left: auto;
+    }
+
+    h1 {
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    .device-lines {
+        left: 8em;
+    }
+
+    .device-quarter {
+        width: 600px;
+        height: 600px;
+        left: 6em;
+        border-width: 115px;
+    }
+}

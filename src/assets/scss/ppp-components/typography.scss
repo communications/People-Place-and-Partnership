@@ -2,13 +2,51 @@ h1,
 h2,
 h3,
 h4,
-.button {
+.button, header nav ul li a, footer .main-nav ul li a {
     font-family: "brother-1816", sans-serif;
     font-weight: 800;
+    line-height: normal;
+}
+
+.hero p {
+    font-family: "brother-1816", sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 1em 0em;
+    line-height: 40px;
+    display: block;
+}
+
+p {
+    font-size: 18px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 110px;
+    line-height: 110px;
     color: $brand-green;
+}
+
+h2 {
+    color: black;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: black;
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    padding: 0px 25px;
+    border-left: 8px solid $primary-color;
+    color: $primary-color;
+    display: block;
+    margin-bottom: 1.5em;
 }
 

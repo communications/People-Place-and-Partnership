@@ -1,0 +1,94 @@
+.button {
+    border:0px;
+    background-color: rgba(0,0,0,0);
+    padding: 0px;
+    color: black;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 99;
+    transition: color 0.5s ease;
+
+    &::before {
+        content:"";
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        position:absolute;
+        left: 0;
+        top:0;
+        background-color: #f6f6f6;
+        z-index: -1;
+        transition: width 0.5s ease;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 33px;
+        right: 35px;
+        bottom: 15px;
+        height: 4px;
+        background-color: $primary-color;
+    }
+
+    &:hover {
+       background-color: rgba(0,0,0,0);
+       color: white;
+       transition: color 0.5s ease;
+
+        &::before {
+            width: 100%;
+            background-color: $primary-color;
+            transition: width 0.5s ease;
+           
+        }
+    }
+
+    &:focus, &:active {
+        text-decoration: underline;
+        background-color: rgba(0,0,0,0);
+
+    }
+}
+
+.button.light-button {
+    color: white;
+
+    &::before {
+        background-color: darken($primary-color, 10%);
+    }
+
+    &::after {
+        background-color: white;
+    }
+
+    &:hover {
+        background-color: rgba(0,0,0,0);
+        color: black;
+        transition: color 0.5s ease;
+ 
+         &::before {
+             width: 100%;
+             background-color: white;
+             transition: width 0.5s ease;
+            
+         }
+     }
+}
+
+.grey-background {
+    .button {
+        &::before {
+            background-color: white;
+        }
+
+        &:hover {
+            &::before {
+                background-color: $primary-color;
+            }
+        }
+    }
+}

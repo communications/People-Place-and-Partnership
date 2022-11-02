@@ -1,18 +1,94 @@
 footer {
 
-  background-color: $primary-color;
+  background-color: darken($primary-color, 10%);
   color: white;
   position: relative;
-  margin-top: 25px;
   padding-bottom: 2em;
-  padding-top: 2em;
+  padding-top: 3em;
+  
 
   img {
-    max-width: 220px;
+    max-width: 150px;
+    margin-bottom: 1em;
   }
 
   a {
     color: white;
     text-decoration: underline;
   }
+
+  .footer-message {
+    border-right: 4px solid $brand-pink;
+    color: white;
+    padding-right: 20px;
+
+    h3 {
+      margin-bottom: 0px;
+      color: white;
+    }
+
+    span {
+      font-style: italic;
+      font-size: 20px;
+    }
+  }
+
+  .large-3 {
+    &:last-child {
+      ul {
+        border: 0px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    border-right: 3px solid lighten($primary-color, 0.5%);
+    width: 90%;
+    
+  
+
+    li a {
+      text-decoration: none;
+      padding-bottom: 15px;
+      font-size: 18px;
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    
+  }
+
+  .main-nav {
+    ul li a {text-transform: uppercase;}
+  }
+
+  .grid-x {
+    border-bottom: 3px solid lighten($primary-color, 0.5%);
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+
+    &:last-child {
+      border-bottom: 0px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+  }
+
+  .sub-footer {
+    p {
+      margin-bottom: 0px;
+      font-size: 15px;
+    }
+  }
+}
+
+.action-sheet {
+  display: none;
 }

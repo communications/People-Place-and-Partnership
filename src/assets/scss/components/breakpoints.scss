@@ -1,448 +1,421 @@
 @include breakpoint (medium down) {
 
-// Header
-
-header .drop-down {
-
-
-    padding: 0px;
-
-
-    li {
-      padding: 0px !important;
-
-      a {
-        font-size: 12px;
-
-      }
-    }
-}
-
-.dropdown .is-dropdown-submenu a {
-  padding-right: 0px;
-}
-
-.is-dropdown-submenu.js-dropdown-active {
-    display: block;
-    border-top: 2px solid white;
-    padding-top: 15px;
-}
-
-
-  header {
-    max-width: 100%;
-    min-height: 100px;
-    padding: 1em;
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .grid-container {
-    padding-left: 2em;
-    padding-right: 2em;
+    max-width: 100%;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
   }
 
-  header .circle-logo {
-    height: 58px;
-  }
-
-  header .text-logo {
-    height: 31px;
-    float: left;
-    margin-left: 15px;
-    margin-top: 13px;
-}
-
-header #nav-icon3 {
-  margin-top: 37px;
-}
-
-.default-page {
-    margin-top: 100px;
-}
-
-header nav {
-
-}
-
-header {
-
-
-}
-
-.fixed-header .circle-logo {
-  height: 58px;
-}
-
-.fixed-header .text-logo {
-    height: 31px;
-  }
-
-
-// Hero
-  .hero .content {
-      padding-top: 12em;
-      padding-bottom: 10em;
-      color: white;
-  }
-
-  .hero:after {
-
-    bottom: -1px;
-    height: 135px;
-
-    background-position-x: 37%;
-}
-
-
-.text-image .image {
-  position: relative;
-  height: 350px;
-}
-
-.text-image.image-text .image:before, .text-image .image:before {
-  transform: none;
-}
-
-.text-image.image-text .grid-container .content {
-    padding-right: 0em;
-    padding-left: 0em;
-}
-
-.medium-padding {
-  padding: 4em 0em;
-}
-
-.text-image .image:before {
-  height: 120px;
-}
-
-.text-image .image:before {
-  bottom: -27px;
-}
-
-
-.default-page {
-  overflow: hidden;
-}
-
-.text-image .image {
-  left: 0;
-}
-
-.text-image .image:before {
-    bottom: -17px;
+  header nav {
+    display: none;
+    position: absolute;
     left: 0;
-    z-index: 9999;
-}
-
-.team .content {
-    padding-right: 0em;
-}
-
-.quote .grid-container h3 {
-    margin-left: 20px;
-}
-
-.subfooter img {
-    padding: 15px;
-    height: 96px;
-}
-
-footer:after {
-  top: -179px;
-}
-
-.subfooter {
-    background-color: #e1e1e1;
-    padding: 3em 0em 7em;
-}
-
-.news-hero .content {
-    padding-top: 5em;
-    padding-bottom: 0em;
-    color: white;
-}
-
-article {
-  padding-top: 3em;
-}
-
-
-header nav {
-
-    padding-top: 2.5em;
-    top: 100px;
-}
-
-header .drop {
-  margin-left: auto;
-
-}
-
-header .drop-down {
-    position: relative;
-    top: 0;
     right: 0;
-    width: 100%;
-    margin-top: 18px !important;
-    padding-bottom: 1px;
-}
-
-header .drop {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-
-}
-
-
-}
-
-
-@include breakpoint (medium down) {
-  header #nav-icon3 {
-    margin-top: 17px;
+    top: 0;
+    background-color: #2b2d30;
+    padding: 5em 1em 1em;
   }
 
-  header .logo {
-    top: 3px;
+  .nav-menu,
+  .logo-container {
+    position: relative;
+    z-index: 99;
   }
 
-  header .circle-logo {
-    height: 50px;
-    width: 50px;
-}
+  header nav ul li {
+    display: block;
+    padding: 13px 15px;
 
-header .text-logo {
-    height: 31px;
-    float: left;
-    margin-left: 9px;
-    margin-top: 11px;
-}
+    a {
+      font-size: 25px;
+    }
+  }
 
-h1 {
-  font-size: 45px;
-  line-height: 55px;
+  .device-quarter {
+    width: 500px;
+    height: 500px;
+    border-width: 90px;
+  }
 
-}
+  .hero .hero-image {
+    width: 400px;
+    height: 400px;
+  }
 
-.hero .content p {
-  max-width: 100%;
-}
+  .hero .content p {
+    max-width: 100%;
+  }
 
-.hero {
-  background-size: 0px;
-    background-position: top;
-    background-repeat: no-repeat;
-        background-color: #262626;
-}
-
-.hero .content {
-  padding-top: 7em;
-      padding-bottom: 7em;
-}
-
-.mobile-hero-image {
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero .content p {
-    font-size: 17px;
+  .hero .content p {
+    font-size: 18px;
     line-height: 25px;
   }
 
-h1 {
-    font-size: 33px;
-    line-height: 43px;
+  header .logo {
+    height: 70px;
+    margin-top: 35px;
+  }
+
+  .medium-padding {
+    padding: 4em 0em;
+  }
+
+  .text-image,
+  .image-text {
+    .medium-padding {
+      padding-bottom: 0em;
+    }
+  }
+
+  .text-image .grid-container .content {
+    min-height: 0px;
+  }
+
+  .img-container {
+    order: 2;
+  }
+
+  .hero .line-down {
+    bottom: -2em;
+  }
+
+  .text-image .device-quarter,
+  .image-text .device-quarter {
+    top: 40%;
+    left: 45%;
+    width: 1000px;
+    height: 1000px;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    border-width: 150px;
+  }
+
+  .image-text .device-quarter {
+    top: 60%;
+  }
+
+  .text-image .device-lines,
+  .image-text .device-lines {
+    top: 60%;
+  }
+
+  .strategy-tiles .brand-p {
+    max-width: 140px;
+  }
+
+  .strategy-tiles {
+    margin-top: 5em;
+    padding-left: 0em;
+    padding-right: 2em;
+  }
+
+  .strategy-tiles.people,
+  .strategy-tiles.partnership {
+    margin-top: 2em;
+  }
+
+  .strategy-tiles.partnership {
+    margin-top: -2em;
+  }
+
+  .strategy-tiles .content {
+    margin-top: -80px;
+    margin-left: 0px;
+    display: inline-block;
+  }
+
+  .strategy-tiles .title {
+    margin-top: -80px;
+    margin-left: 90px;
+  }
+
+  .strategy-tiles.people .title {
+    margin-top: -60px;
+    margin-left: 105px;
+  }
+
+  .strategy-tiles.partnership .title {
+    margin-top: -50px;
+    margin-left: 80px;
+  }
+
+  .vimeo-container .play-video:after,
+  .video-play-tiles .video-tile .play-video:after,
+  .vimeo-container .stop-video:after,
+  .video-play-tiles .video-tile .stop-video:after {
+    width: 90px;
+    height: 90px;
+  }
+
+  .hero .hero-image {
+    margin-top: 4em;
+  }
+
+  .hero .device-quarter {
+    top: 2em;
+  }
+
+  .hero .device-lines {
+    top: 5vh;
+  }
+
+  footer .large-3:last-child ul {
+    border-right: 3px solid #43474c;
+  }
+
+  footer ul {
+    width: 100%;
+  }
 }
 
 
-h2 {
-  font-size: 26px;
-  line-height: 36px;
+@include breakpoint (small only) {
+  header img {
+    width: 130px;
+    margin-top: 10px !important;
+  }
+
+  header .logo {
+    height: 62px;
+    width: initial;
+  }
+
+  h1, .smaller-hero h1 {
+      font-size: 40px;
+      line-height: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .smaller-hero .hero-image {
+    margin-left: 2px;
+  }
+
+  .hero .content p {
+    font-size: 17px;
+    line-height: 21px;
 }
 
-h3 {
-    font-size: 18px;
-    line-height: 26px;
-}
-
-.hero:after {
-  height: 80px;
-}
-
-.hero:before {
+.hero .line-down {
   display: none;
 }
 
-.three-columns img {
-  max-width: 80px;
+.hero .content {
+  padding-top: 9em;
+  padding-bottom: 0em;
+  position: relative;
+  z-index: 99;
 }
 
-.text-image .image:before {
-  height: 80px;
+.hero .device-lines {
+  top: 3em;
+  left: 0em;
 }
 
-.text-image .medium-padding {
-  padding-top: 2em;
-  padding-bottom: 2em;
+.device-lines span {
+  width: 8px;
+  margin-right: 5px;
 }
 
-header nav ul li {
-  margin-bottom: 5px;
+.hero .device-quarter {
+  width: 300px;
+  height: 300px;
+  border-width: 70px;
+  left: inherit;
+
 }
 
-header nav {
-  padding-top: 1.5em;
-}
-.fixed-header .circle-logo {
-    height: 40px;
-    width: 30px;
+.hero .hero-image {
+  width: 280px;
+  height: 280px;
 }
 
-.fixed-header .text-logo {
-    height: 21px;
-    width: 59px;
+.hero .hero-image {
+  margin-bottom: 3em;
 }
 
-.fixed-header .logo {
-  top: 9px;
+.button {
+  font-size: 15px;
 }
 
-.fixed-header {
-  min-height: 66px;
-padding: 1px 16px;
+.grid-container {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-.fixed-header nav {
-  top: 66px;
-padding: 18px 11px;
-}
-
-.news-tile .image {
-  height: 170px;
-}
-
-p {
-    font-size: 17px;
-}
-
-.news-tile {
-  margin-top: 0em;
-  margin-bottom: 2em;
-}
-
-.text-image .image {
-  height: 250px;
-}
-
-.team img {
-  margin-bottom: 1.5em;
-  margin-left: 0px;
-}
-
-.team .text-center {
-  text-align: left;
-}
-
-.large-padding {
-  padding: 5em 0em;
-}
-
-.quote .grid-container h2:before {
-  font-size: 220px;
-}
-
-.subfooter img {
-    padding: 11px;
-    height: initial;
-    width: 44%;
-    margin: auto;
-    display: inline-block;
-    text-align: center;
-}
-
-.subfooter {
-  padding: 2em 0em 4em;
-}
-
-footer {
-  text-align: center;
-
-  img {
-    max-width: 150px;
-    margin-bottom: 20px;
-  }
-
-  .text-right {
-    text-align: center;
-  }
-}
-
-.quote .grid-container h2:before {
-  left: 0px;
-}
-
-.quote .grid-container h2 {
-  margin-bottom: 5px;
-}
-
-.news-hero h1 {
-  font-size: 22px;
-  line-height: 32px;
-}
-
-.news-hero .content {
-  padding-top: 3em;
-}
-
-.news-hero .content {
-  padding-bottom: 4em;
-}
-
-article {
-  padding-top: 0em;
-  margin-top: 1em;
-}
-
-.large-h3 {
-  font-size: 20px;
-    line-height: 30px;
-}
-
-.news-hero .no-image-content {
-  padding-bottom: 7em !important;
-}
-
-
-
-  .button {
-    font-size: 16px;
-  }
-  .three-columns img {
-    max-width: 80px;
+header nav ul li a {
+  font-size: 19px;
 }
 
 .text-image .grid-container .content {
   padding-right: 0em;
-  padding-left: 0em;
 }
 
-header nav ul li a:hover {
-  border-bottom: 0px;
+blockquote, p {
+  font-size: 16px;
 }
+
+.text-image .device-quarter, .image-text .device-quarter {
+  border-width: 100px;
+  height: 600px;
+  width: 600px;
+  top:60%;
 }
 
-@media print {
-  header {
-    display: none;
-  }
+.small-circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #D64B8A;
+  position: absolute;
+  top: 9%;
+  left: 0%;
+}
 
-  footer {
-    display: none;
-  }
+.medium-circle {
+  width: 140px;
+  height: 140px;
+  left: 10%;
+}
 
-  .sub-footer {
-    display: none;
-  }
+.image-text .image-container, .text-image .image-container {
+  min-height: 380px;
+  max-height: 380px;
+}
+
+.img-container {
+  max-height: 380px !important;
+}
+
+.strategy-tiles .brand-p {
+  max-width: 100px;
+}
+
+.strategy-tiles {
+  padding-right: 0em;
+  margin-top: 1em;
+}
+
+.strategy-tiles .title {
+  margin-top: -50px;
+  margin-left: 64px;
+}
+
+.strategy-tiles h3 {
+  font-size: 28px;
+}
+
+.strategy-tiles.people .title {
+  margin-top: -30px;
+  margin-left: 69px;
+}
+
+.strategy-tiles.partnership {
+  margin-top: 0em;
+  padding: 0px;
+}
+
+.strategy-tiles.partnership .brand-p {
+  max-width: 93px;
+  margin-left: 25px;
+}
+.strategy-tiles.partnership .title {
+  margin-top: -20px;
+}
+.image-text .device-quarter {
+  left: -100%;
+}
+
+.full-width-video .vimeo-container {
+  min-height: 200px;
+}
+
+.vimeo-container .play-video:after, .video-play-tiles .video-tile .play-video:after, .vimeo-container .stop-video:after, .video-play-tiles .video-tile .stop-video:after {
+  width: 60px;
+  height: 60px;
+  background-size: 30px;
+}
+
+footer img {
+  display: none;
+}
+
+footer .footer-message {
+    text-align: left;
+    padding-bottom: 0px;
+    border-right: 0px;
+    padding-right: 0px;
+    border-left: 4px solid $brand-pink;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+
+    h3 {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+
+    span {
+      font-size: 15px;
+    }
+}
+
+footer ul {
+  border: 0px !important;
+}
+
+footer ul li a {
+  text-decoration: none;
+  padding-bottom: 6px;
+  font-size: 15px;
+  display: block;
+}
+
+footer .grid-x {
+  margin-bottom: 24px;
+}
+
+footer .sub-footer p {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+footer .sub-footer .text-right {
+  text-align: left;
+}
+
+.fixed-header .logo {
+  height: 50px;
+  margin: 0px 0px;
+  -webkit-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+  display: block;
+}
+
+.fixed-header .logo {
+  height: 50px;
+  margin: 0px 0px;
+  -webkit-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+  display: block;
+  width: initial;
+  margin: 0px !important;
+}
+
+header #nav-icon3 {
+  margin: 15px 0px 2px;
+}
+
+.fixed-header {
+  height: 88px;
+}
 }

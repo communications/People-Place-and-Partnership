@@ -7,25 +7,14 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  padding: 28px 0px;
+  height: 100px;
 
-nav {
-  padding: 1em 0em;
-
-  ul {
-    margin: 0px !important;
-
-    li {
-      padding: 10px 16px !important;
-      border-radius: 10px;
-    }
-  }
-}
 
 
 .logo {
-  position: absolute;
-  top: 20px;
+  margin: 40px 0px 0px;
+  height: 85px;
+  transition: height 0.2s ease;
 }
 
 .logo-container {
@@ -42,9 +31,6 @@ nav {
 
 .text-logo {
   height: 35px;
-float: left;
-margin-left: 1em;
-margin-top: 6px;
 }
 
 .language-button {
@@ -115,14 +101,14 @@ margin-top: 6px;
       li {
 
         display: inline-block;
-        padding: 0px 10px;
+        padding: 0px 20px;
 
         a {
           color: white;
           text-transform: uppercase;
-          font-size: 14px;
+          font-size: 19px;
           padding: 0px;
-          letter-spacing: 2px;
+        
 
           &:hover {
             border-bottom: 2px solid white;
@@ -131,8 +117,21 @@ margin-top: 6px;
         }
 
         .is-active {
-          font-weight: bold;
-         border-bottom: 2px solid $light-blue;
+         position: relative;
+         border-bottom: 4px solid $brand-pink;
+         margin-left: 30px;
+
+         &::before {
+          content: "";
+          position: absolute;
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          background-color: darken($primary-color, 10%);
+          z-index: -1;
+          left: -30px;
+    top: -15px;
+                 }
         }
 
         .sub-menu {
@@ -145,8 +144,8 @@ margin-top: 6px;
 
 
   #nav-icon3 {
-    width: 35px;
-    height: 25px;
+    width: 45px;
+    height: 35px;
     position: relative;
     margin: 0px auto;
     float: right;
@@ -174,7 +173,7 @@ margin-top: 6px;
   #nav-icon3 span {
     display: block;
     position: absolute;
-    height: 2px;
+    height: 4px;
     width: 100%;
     background: white;
     border-radius: 0px;
@@ -275,23 +274,7 @@ margin-top: 6px;
 
 
 
-  header nav {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    padding: 2em;
-padding-top: 100px;
-background-color: #19232c;
-z-index: -1;
-overflow-y: scroll;
-
-ul li {
-  display: block;
-    margin-bottom: 30px;
-}
-  }
+ 
 
 
   @include breakpoint(small only) {
@@ -321,15 +304,30 @@ ul li {
 
 
   .fixed-header {
-    .circle-logo {
-      height: 44px;
-      transition: height 0.15s ease-out;
+    
+    background-color: darken($primary-color, 10%);
+    
+    .logo {
+      height: 60px;
+      margin: 20px 0px;
+      transition: height 0.2s ease;
     }
 
-    .text-logo {
-      height: 33px;
-        transition: height 0.15s ease-out;
+    nav ul li a {
+      font-size: 17px;
+      transition: all 0.2s ease;
     }
+
+    nav ul li .is-active {
+      &::before {
+        background-color: $primary-color;
+        width: 60px;
+    height: 60px;
+    transition: all 0.2s ease;
+      }
+    }
+
+
   }
 
 
@@ -349,7 +347,8 @@ header nav .drop-down li a {
     text-transform: uppercase;
     font-size: 12px;
   padding: 10px 0px 20px;
-    letter-spacing: 2px;
+   
+
     display: block;
     border-bottom: 1px solid #3e4956;
 }

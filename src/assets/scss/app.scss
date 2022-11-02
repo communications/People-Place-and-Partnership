@@ -71,9 +71,16 @@
 @import 'components/three-tiles';
 @import 'components/text-image';
 @import 'components/footer';
-@import 'components/breakpoints';
-
-
 
 // People Place and Partnerships
 @import 'ppp-components/typography';
+@import 'ppp-components/hero';
+@import 'ppp-components/devices';
+@import 'ppp-components/buttons';
+@import 'ppp-components/image-text';
+@import 'ppp-components/tiles-ulster';
+@import 'ppp-components/tiles';
+@import 'ppp-components/video';
+
+// Breakpoint
+@import 'components/breakpoints';

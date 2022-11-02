@@ -1,0 +1,304 @@
+.full-width-video {
+  padding-bottom: 4em;
+}
+
+.vimeo-container {
+    position: relative;
+  
+    .vimeo-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom:0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      z-index: 9;
+      background-color: $primary-color;
+      border-radius: 10px;
+  
+      iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+      
+      }
+  
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 11;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  
+    .play-video {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 12;
+      border-radius: 10px;
+  
+      &::before {
+        content:"";
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.6;
+        border-radius: 10px;
+        background: rgb(5,5,5);
+        background: rgb(5,5,5);
+        background: -moz-linear-gradient(214deg, rgba(5,5,5,0) 0%, rgba(5,5,5,0) 55%, rgba(5,5,5,0.9108237044817927) 100%);
+        background: -webkit-linear-gradient(214deg, rgba(5,5,5,0) 0%, rgba(5,5,5,0) 55%, rgba(5,5,5,0.9108237044817927) 100%);
+        background: linear-gradient(214deg, rgba(5,5,5,0) 0%, rgba(5,5,5,0) 55%, rgba(5,5,5,0.9108237044817927) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050505",endColorstr="#050505",GradientType=1);
+      }
+  
+      &:after {
+        content: "";
+        background-image: url(../img/play-button.png);
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        width: 100px;
+        height: 100px;
+        border: 5px solid white;
+        border-radius: 50%;
+        color: $primary-color;
+        font-size: 47px;
+        text-align: center;
+        padding: 10px 30px;
+        background-color: white;
+        font-weight: 900;
+        background-size: contain;
+        background-size: 46px;
+        background-position: 61%;
+        background-repeat: no-repeat;
+    
+      }
+  
+      &:focus {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.2);
+  
+        &:after {
+          background-color: $primary-color;
+          color: white;
+          border-color: $primary-color;
+        }
+      }
+    }
+  
+  
+    .stop-video {
+      position: absolute;
+      bottom: 0;
+      left: 0em;
+      bottom: 0em;
+      
+      width: 102px;
+      height: 111px;
+      z-index: 12;
+      border-radius: 10px;
+      display: none;
+  
+      &:after {
+     
+        content: "X";
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        width: 80px;
+        height: 80px;
+        border: 5px solid white;
+        border-radius: 50%;
+        color: $primary-color;
+        font-size: 34px;
+        text-align: center;
+        padding: 9px 10px;
+        background-color: white;
+        font-weight: 900;
+        background-size: contain;
+        background-size: 46px;
+        background-position: 61%;
+        background-repeat: no-repeat;
+      }
+  
+      &:focus {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.2);
+  
+        &:after {
+          background-color: $primary-color;
+          color: white;
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+  
+  
+  .full-width-video {
+    .vimeo-container {
+      min-height: 706px;
+    }
+  }
+  
+  .video-play-tiles {
+  
+  
+    .video-tile {
+      min-height: 350px;
+  
+     .play-video:after, .stop-video:after  {
+       
+        bottom: 30px;
+        left: 30px;
+        width: 80px;
+        height: 80px;
+        font-size: 36px;
+        padding: 8px 10px;
+        text-align: center;
+      }
+  
+      .stop-video:after  {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+      }
+  
+      
+  
+      .play-video:after {
+        padding: 8px 23px;
+      }
+    }
+  }
+  
+  .page-hero-beta.vimeo-container .vimeo-wrapper {
+    iframe {
+      position: absolute;
+      width: 190vw;
+      min-height: 100vh;
+      min-width: 190.77vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  
+  .promo-container {
+    padding-left: 4em;
+  
+    @include breakpoint(small only) {
+      padding-left: 0em;
+      margin-top: 2em;
+  
+      position: absolute !important;
+      top: -10px;
+      left: 1em;
+      right: 1em;
+      width: 90%;
+      z-index: 99;
+      margin-top: 1.2em;
+  
+      iframe {
+        height: 215px;
+      border-radius: 0px;
+      }
+    }
+  }
+  
+  .promo-live {
+    border-radius: 15px;
+    box-shadow:                0 10px 20px rgba(0,0,0,0.3), 0 6px 6px rgba(0,0,0,0.3);
+  }
+  
+  
+  
+  
+  @include breakpoint (medium down) {
+    .vimeo-container {
+      min-height: 400px;
+      margin-bottom: 2em;
+    }
+  
+  
+    .vimeo-container .play-video, .video-play-tiles .video-tile .play-video, .vimeo-container .stop-video, .video-play-tiles .video-tile .stop-video {
+      right: 0px;
+  
+      &:after {
+        left: 20px;
+        bottom: 25px;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        padding: 3px 14px;
+      }
+  
+      &:hover {
+        box-shadow:0 10px 20px rgba(0,0,0,0.06), 0 6px 6px rgba(0,0,0,0.06);
+  
+        &::after {
+          
+        }
+      }
+    }
+  
+    .vimeo-container .stop-video:after, .video-play-tiles .video-tile .stop-video:after {
+      padding: 3px 4px;
+    }
+  
+  
+    .vimeo-container .vimeo-wrapper iframe {
+      pointer-events: all;
+    }
+  
+    .full-width-video {
+      .vimeo-container {
+        min-height: 400px;
+      }
+    }
+  }
+  
+  @include breakpoint (small only) {
+    .grid-padding-x>.cell {
+      padding-right: 0em;
+      padding-left: 0em;
+    }
+  
+    .vimeo-container {
+      min-height: 240px;
+      margin-bottom: 0px;
+    }
+  
+    .full-width-video {
+      .vimeo-container {
+        min-height: 240px;
+      }
+    }
+  
+    .video-play-tiles .video-tile {
+      min-height: 240px;
+    }
+  }
+  

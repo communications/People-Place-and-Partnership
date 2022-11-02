@@ -1,12 +1,12 @@
 .text-image {
 
-position:relative;
+  position: relative;
 
 
 
- .image {
+  .image {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 50%;
@@ -34,7 +34,7 @@ position:relative;
 .text-image.image-text {
 
   .image {
-    left:0;
+    left: 0;
     right: 50%;
 
 
@@ -46,17 +46,4 @@ position:relative;
     min-height: 400px;
   }
 
-}
-
-
-.dark-background .image {
-
-
-
-}
-
-.grey-background .image {
-
-
-  
 }

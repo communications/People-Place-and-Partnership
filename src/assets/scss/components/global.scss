@@ -26,13 +26,8 @@ body {
   padding: 8em 0em;
 }
 
-
-.dark-background {
-  background-color: $primary-color;
-  color: white;
-}
 .grey-background {
-  background-color: #EDEDED;
+  background-color: #FAFAFA;
 }
 
 h1 {
@@ -150,4 +145,9 @@ article {
     margin-bottom: 20px;
 
   }
+}
+
+
+.page-tile.news-tile .image-container:before, .featured-tile-news .image-container:before, .most-viewed-tile.news-tile .image-container:before {
+  background-color: $brand-pink !important;
 }

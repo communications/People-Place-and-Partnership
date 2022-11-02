@@ -1,0 +1,67 @@
+.image-text, .text-image {
+    position: relative;
+    overflow: hidden;
+
+    .cell {
+        position: relative;
+        z-index: 1;
+    }
+
+    .image-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            max-height: 85%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    .align-middle {
+        .image-container img {
+            
+            bottom: 10%;
+            max-height: 80%;
+
+        }
+    }
+}
+
+.text-image {
+    .device-lines {
+        right: 2em;
+        top: 6em;
+    }
+
+    .device-quarter {
+        top: 15%;
+        left: 70%;
+        width: 1200px;
+        height: 1200px;
+        transform: rotate(-135deg);
+        border-width: 200px;
+       
+    }
+}
+
+.image-text {
+    .device-lines {
+        left: 2em;
+        top: 6em;
+    }
+
+    .device-quarter {
+        top: 15%;
+        left: -40%;
+        width: 1200px;
+        height: 1200px;
+        transform: rotate(-45deg);
+        border-width: 200px;
+       
+    }
+}
