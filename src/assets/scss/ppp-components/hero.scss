@@ -97,6 +97,10 @@
         line-height: 90px;
     }
 
+    .button {
+        display: none;
+    }
+
     .device-lines {
         left: 8em;
     }
@@ -106,5 +110,13 @@
         height: 600px;
         left: 6em;
         border-width: 115px;
+    }
+}
+
+.Startegy-page, .strategy-page {
+    .hero {
+        .button {
+            display: block;
+        }
     }
 }
