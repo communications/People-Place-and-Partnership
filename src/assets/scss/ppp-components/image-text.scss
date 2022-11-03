@@ -29,14 +29,25 @@
     position: relative;
     overflow: hidden;
 
+    blockquote {
+        font-size: 20px;
+    }
+
     blockquote p {
-        font-size: 18px;
+        font-size: 20px;
         color: $primary-color !important;
     }
 
     &.hide-circles {
         .small-circle, .medium-circle {
             display: none !important;
+        }
+    }
+
+    ul {
+        margin-left: 2em;
+        li {
+            font-size: 18px;
         }
     }
 
