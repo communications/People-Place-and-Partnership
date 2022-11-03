@@ -80,8 +80,8 @@
         width: 4px;
         background-color: white;
         height: 80px;
-        bottom: -4em;
-        left: 0em;
+        bottom: 0em;
+        left: 4em;
     }
 }
 
@@ -116,7 +116,7 @@
 .Strategy-page, .strategy-page {
     .hero {
         .button {
-            display: block;
+            display: inline-block;
         }
     }
 }
