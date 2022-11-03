@@ -1,11 +1,12 @@
 .strategy-tiles {
 
     padding-left: 5em;
+    margin-top: 2em;
     position: relative;
     margin-bottom: 3em;
 
     &.people {
-       margin-top: -10em;
+       margin-top: -5em;
 
        .title {
         margin-top: -90px;
@@ -15,7 +16,7 @@
     }
 
     &.partnership {
-        margin-top: -10em;
+        margin-top: -5em;
         display: block;
         padding-right: 5em;
         padding-left: 2em;
