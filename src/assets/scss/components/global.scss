@@ -147,6 +147,10 @@ article {
   }
 }
 
+.fa-calendar {
+  display: none !important;
+}
+
 
 .page-tile.news-tile .image-container:before, .featured-tile-news .image-container:before, .most-viewed-tile.news-tile .image-container:before {
   background-color: $brand-pink !important;
