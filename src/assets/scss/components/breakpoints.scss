@@ -187,6 +187,30 @@
     left: 2em;
   }
 
+  header .drop-down {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+
+    li a {
+      font-size: 19px !important;
+      padding-right: 0px !important;
+    }
+  }
+
+  .text-image .full-image-text-image, .image-text .full-image-text-image {
+    height: 350px;
+  left: 0;
+  width: 100%;
+  border-radius: 0px;
+  bottom: 0;
+  top: initial;
+  z-index: 1;
+  position: relative;
+  }
+
   
 }
 
@@ -443,5 +467,11 @@ header #nav-icon3 {
 
 blockquote, blockquote p {
   padding-right: 0px !important;
+}
+
+header .drop-down li a {
+  font-size: 15px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
 }
 }

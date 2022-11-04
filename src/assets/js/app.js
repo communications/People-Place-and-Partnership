@@ -78,6 +78,6 @@ AOS.init({
 
 
 
-$("header nav ul li").hover(function() {
-    $(this).find("ul").addClass("hover-me");
- });
+// $("header nav ul li").hover(function() {
+//     $(this).find("ul").addClass("hover-me");
+//  });
