@@ -193,11 +193,18 @@
     width: 100%;
     margin-top: 0px;
     padding-top: 0px;
+    top: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 
     li a {
-      font-size: 19px !important;
+      font-size: 16px !important;
       padding-right: 0px !important;
     }
+  }
+
+  header .drop-down li {
+    padding: 8px;
   }
 
   .text-image .full-image-text-image, .image-text .full-image-text-image {
@@ -209,6 +216,20 @@
   top: initial;
   z-index: 1;
   position: relative;
+  }
+
+  header .drop-down::before {
+    display: none !important;
+  }
+
+  .full-image-section {
+    .img-container {
+      display: none;
+    }
+  }
+
+  .uls-document-list {
+    padding-top: 3em;
   }
 
   
@@ -300,7 +321,7 @@ header nav ul li a {
   padding-right: 0em;
 }
 
-blockquote, p {
+blockquote, p, .image-text ul li, .text-image ul li {
   font-size: 16px;
 }
 
@@ -465,13 +486,19 @@ header #nav-icon3 {
   margin-top: 2em;
 }
 
-blockquote, blockquote p {
+blockquote, blockquote p, .image-text blockquote p, .text-image blockquote p {
   padding-right: 0px !important;
+  font-size: 17px;
 }
 
 header .drop-down li a {
-  font-size: 15px !important;
+  font-size: 14px !important;
   padding-right: 0px !important;
   padding-top: 0px !important;
+}
+
+.text-image .full-image-text-image, .image-text .full-image-text-image {
+  height: 280px;
+  margin-top: 1em;
 }
 }
