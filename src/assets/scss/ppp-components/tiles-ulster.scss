@@ -2122,3 +2122,283 @@ body .featured-tile .featured {
     margin-top: 1rem !important;
   }
 }
+
+.file-tiles {
+  li {
+    a {
+      color: #001335!important;
+      font-size: 18px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 20px, rgba(0, 0, 0, 0.06) 0px 6px 6px;
+      font-size: 18px;
+      background-color: #fff;
+      border: 1px solid #fafafa;
+      margin-bottom: 1em;
+      font-weight: bold;
+      display: block;
+      max-width: 98%;
+      margin-left: 1%;
+      margin-right: 1%;
+      color: red;
+      min-width: 55%;
+      padding: 15px 24px;
+      text-decoration: none !important;
+      position: relative;
+
+      span {
+        font-size: 13px;
+        margin-left: 10px;
+        color: $primary-color;
+        text-decoration: none;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: normal;
+        margin-top: 0px;
+        margin-left: 0px;
+        text-decoration: none;
+        font-weight: normal;
+      }
+
+      &:hover {
+        background-color: #eeeeee ;
+        border-color: #eeeeee ;
+      }
+
+      &:active, &:focus {
+        color: #fff !important;
+        background-color: #061e42 !important;
+        border-color: #061e42 ;
+
+      span {
+          color: white !important;
+        }
+      }
+    }
+    img {
+      margin-right: 5px;
+      margin-top: -5px;
+    }
+  }
+
+  li:not(.menu-item):not(.is-active) a:not(.button):not(.mega-menu-link):not(.hover):not(.menu-item):focus {
+    color: #fff !important;
+    background-color: #061e42 !important;
+    border-color: #061e42 ;
+    box-shadow: none !important;
+
+    span {
+      color: white !important;
+    }
+  }
+
+  @include breakpoint(small down) {
+
+    li a {
+      font-size: 15px;
+      line-height: 22px;
+      padding: 15px 17px;
+      min-width: 100%;
+    }
+  }
+
+  .image-file {
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    margin-right: 2%;
+   margin-top: 1em;
+    margin-bottom: 1.5em;
+    vertical-align: top;
+    margin-bottom: 2.5em;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+
+    h3 {
+      font-size: 17px;
+    }
+
+     .zoom-in {
+            position: absolute;
+            bottom: 0;
+            z-index: 999;
+            width: 100%;
+            top: 0;
+            color: white;
+            font-size: 18px;
+            padding: 5px 15px;
+            text-align: right;
+            height: 200px;
+
+            .fa {
+              background-color: rgba(0, 20, 53, 0.7);
+              padding: 13px;
+              bottom: 0;
+              position: absolute;
+              right: 0;
+              border-radius: 10px 0 0 0;
+              left: 0;
+              top: 0;
+              text-align: center;
+              padding-top: 78px;
+              font-size: 45px;
+              border-radius: 10px 10px 0px 0px;
+              display:none;
+            }
+        }
+
+         .zoom-in:hover {
+        cursor: pointer;
+        background-color: rgba(0, 20, 53, 0.53);
+        border-radius: 10px 10px 0px 0px;
+
+        .fa {
+          display: block;
+        }
+
+        }
+
+    a {
+      width: 100%;
+      margin-right: 0px;
+      margin: 0px;
+      min-height: 0px;
+      padding-left: 20px;
+      padding-top: 20px;
+      max-width: 100%;
+      padding-bottom: 20px;
+      border:0px;
+      border-radius: 0px 0px 10px 10px;
+    }
+    p {
+      display: none;
+    }
+    .description {
+      font-weight: normal;
+      font-size: 15px;
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      left: 140px;
+      right: 45px;
+      display: none;
+
+
+
+      img {
+        margin-right:5px;
+      }
+
+
+
+      .fa, span {
+        float: right;
+        margin-top: 9px;
+      }
+    }
+
+    h4 {
+      margin-bottom: 0px;
+      hyphens: none;
+      padding-right: 50px;
+      position: relative;
+      color: #110f3b !important;
+
+      &:after {
+        position: absolute;
+        right: 0;
+        top:0;
+        content: "\f019";
+        font-size: 17px;
+        color: #110f3b;
+        font-family: 'Font Awesome 6 Pro';
+      }
+    }
+
+    .image {
+      position: relative;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 70%;
+      margin: auto;
+      background-color: #f1f1f1;
+      border-radius: 10px 10px 0 0px;
+      background-size: contain;
+      background-position: center;
+      height: 200px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .image-cover {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.file-tiles li a span {
+  font-size: 11px;
+  line-height: 13px;
+  color: $primary-color;
+  text-decoration: none;
+  margin-left: 2px;
+  white-space: pre;
+}
+
+
+
+
+@include breakpoint(medium down) {
+  .file-tiles .image-file {
+    width: 100%;
+  }
+}
+
+@include breakpoint(small only) {
+  .file-tiles .image-file .image {
+    width: 58%;
+      height: 138px;
+      border-radius: 10px 10px 0 0;
+  }
+
+  .file-tiles .image-file a {
+    padding: 25px;
+    padding-top: 25px;
+    min-height: 0px;
+  }
+
+  .file-tiles .image-file .description {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 36px;
+    display: none;
+    margin-bottom: -10px;
+    font-size: 13px;
+
+    .fa, span {
+      margin-top: -1px;
+      font-size: 18px;
+    }
+  }
+
+  .file-tiles .image-file .description .fa, .file-tiles .image-file .description span {
+    margin-top: 2px;
+  }
+
+  .file-tiles .image-file, .file-tiles li a {
+        width: 92%;
+        margin: 1em 4%;
+        min-width: 90%;
+    }
+
+
+  .file-tiles .image-file .image-cover {
+    background-size: cover;
+    background-position: center;
+
+  }
+}
