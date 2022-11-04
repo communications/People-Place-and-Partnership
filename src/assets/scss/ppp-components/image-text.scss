@@ -9,18 +9,40 @@
         background-position: center;
         border-radius: 50%;
     }
+
+    &.full-image-section {
+        .device-lines, .device-quarter {
+            display: none !important;
+        }
+    }
+
+   
 }
 
 .image-text {
     .full-image-text-image {
         position: absolute;
         width: 54%;
-        right: 65%;
+        right: 59%;
         bottom: -30%;
         top: -30%;
         background-size: cover;
         background-position: center;
         border-radius: 50%;
+    }
+
+    &.full-image-section {
+        .medium-circle {
+            left: 56%;
+        }
+
+        .small-circle {
+            left: 46%;
+        }
+
+        .device-lines, .device-quarter {
+            display: none !important;
+        }
     }
 }
 
