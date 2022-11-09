@@ -155,3 +155,10 @@ article {
 .page-tile.news-tile .image-container:before, .featured-tile-news .image-container:before, .most-viewed-tile.news-tile .image-container:before {
   background-color: $brand-pink !important;
 }
+
+p {
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
