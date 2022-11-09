@@ -61,7 +61,7 @@
         font-size: 20px;
         color: darken($primary-color, 10%) !important;
     }
-    
+
 
     &.hide-circles {
         .small-circle, .medium-circle {
@@ -178,4 +178,14 @@
         border-width: 200px;
        
     }
+}
+
+blockquote {
+    font-size: 20px;
+    color: darken($primary-color, 10%) !important;
+}
+
+blockquote p {
+    font-size: 20px;
+    color: darken($primary-color, 10%) !important;
 }
