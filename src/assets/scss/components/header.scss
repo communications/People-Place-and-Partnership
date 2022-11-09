@@ -65,7 +65,7 @@ header {
 
 .drop-down {
     position: absolute;
-    left: 20px !important;
+    left: 0em !important;
     right: 0;
     width: 380px;
     top: 40px;
@@ -113,7 +113,11 @@ header {
 }
 
 
-
+.is-active {
+  .drop-down {
+    left: 20px !important;
+  }
+}
 
 
   @include breakpoint(small only) {
